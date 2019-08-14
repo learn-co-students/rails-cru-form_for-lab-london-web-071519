@@ -1,0 +1,5 @@
+<h1><%= @artist.name %></h1>
+<p><%= @artist.bio %></p>
+<br>
+<%= button_to "Delete Artist", artist_path(@artist), method: :delete, data: {confirm: "Are you sure?"} %>
+<%= button_to "Back to home", artists_path, method: :get %>
